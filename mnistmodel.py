@@ -165,7 +165,7 @@ class GBNNet(nn.Module):
         # print("running GBN network")
         self.convblock1 = nn.Sequential(
             nn.Conv2d(in_channels=c_in, out_channels=c_out, kernel_size=(3, 3), padding=0, bias=False),
-            GhostBatchNorm(c_out, num_splits=GBN_NUM_SPLITS, weight=False),
+            GhostBatchNorm(c_out, num_splits=self.GBN_NUM_SPLITS, weight=False),
             nn.ReLU()
         )  # output_size = 26
 
@@ -174,7 +174,7 @@ class GBNNet(nn.Module):
         c_out = 8
         self.convblock2 = nn.Sequential(
             nn.Conv2d(in_channels=c_in, out_channels=c_out, kernel_size=(3, 3), padding=0, bias=False),
-            GhostBatchNorm(c_out, num_splits=GBN_NUM_SPLITS, weight=False),
+            GhostBatchNorm(c_out, num_splits=self.GBN_NUM_SPLITS, weight=False),
             nn.ReLU()
         )  # output_size = 24
 
@@ -182,7 +182,7 @@ class GBNNet(nn.Module):
         c_out = 8
         self.convblock3 = nn.Sequential(
             nn.Conv2d(in_channels=c_in, out_channels=c_out, kernel_size=(3, 3), padding=0, bias=False),
-            GhostBatchNorm(c_out, num_splits=GBN_NUM_SPLITS, weight=False),
+            GhostBatchNorm(c_out, num_splits=self.GBN_NUM_SPLITS, weight=False),
             nn.ReLU()
         )  # output_size = 22
 
@@ -194,7 +194,7 @@ class GBNNet(nn.Module):
         c_out = 16
         self.convblock4 = nn.Sequential(
             nn.Conv2d(in_channels=c_in, out_channels=c_out, kernel_size=(3, 3), padding=0, bias=False),
-            GhostBatchNorm(c_out, num_splits=GBN_NUM_SPLITS, weight=False),
+            GhostBatchNorm(c_out, num_splits=self.GBN_NUM_SPLITS, weight=False),
             nn.ReLU()
         )  # output_size = 22
 
@@ -204,14 +204,14 @@ class GBNNet(nn.Module):
 
         self.convblock5 = nn.Sequential(
             nn.Conv2d(in_channels=c_in, out_channels=c_out, kernel_size=(3, 3), padding=0, bias=False),
-            GhostBatchNorm(c_out, num_splits=GBN_NUM_SPLITS, weight=False),
+            GhostBatchNorm(c_out, num_splits=self.GBN_NUM_SPLITS, weight=False),
             nn.ReLU()
         )  # output_size = 9
         c_in = 16
         c_out = 16
         self.convblock6 = nn.Sequential(
             nn.Conv2d(in_channels=c_in, out_channels=c_out, kernel_size=(3, 3), padding=0, bias=False),
-            GhostBatchNorm(c_out, num_splits=GBN_NUM_SPLITS, weight=False),
+            GhostBatchNorm(c_out, num_splits=self.GBN_NUM_SPLITS, weight=False),
             nn.ReLU()
         )  # output_size = 7
 
