@@ -6,6 +6,22 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
 
+class InitModelParams:
+
+    def __init__(self, num_splits = 1):
+        self.modelHyperParamDict = {"GBN_NUM_SPLITS": num_splits}
+
+    def getModelHyperParamDict(self):
+        return self.modelHyperParamDict
+
+    def clearModelHyperParamDict(self):
+        self.modelHyperParamDict.clear()
+
+
+imp = InitModelParams()
+
+
+
 
 class GhostBatchNorm(nn.BatchNorm2d):
     """
@@ -139,8 +155,10 @@ class BNNet(nn.Module):
 
 
 class GBNNet(nn.Module):
-    def __init__(self):
+    def __init__(self, gbn_splits=0):
         super(GBNNet, self).__init__()
+        self.GBN_NUM_SPLITS = gbn_splits
+
         # Input Block
         c_in = 1
         c_out = 8
