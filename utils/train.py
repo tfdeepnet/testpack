@@ -8,7 +8,7 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
 
-def train(trainloader, optimizer, net, criterion, num_bucket,device):
+def train(epoch,  trainloader, optimizer, net, criterion, num_bucket,device):
 
     running_loss = 0.0
     for i, data in enumerate(trainloader, 0):

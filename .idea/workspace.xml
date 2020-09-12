@@ -23,19 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65a35cc2-519c-4a17-a368-2d44122c47fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_windows/laf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/codestyles/Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colors.scheme.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debugger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filetypes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/find.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inspection/Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mnistmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnistmodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wsl.distributions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
