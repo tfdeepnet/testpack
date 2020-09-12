@@ -240,3 +240,4 @@ class GBNNet(nn.Module):
         x = self.gap(x)
         x = x.view(-1, 10)
         return F.log_softmax(x, dim=-1)
+
